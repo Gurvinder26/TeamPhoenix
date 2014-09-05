@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="LoginFailure" Id="f87ed1d5-4d36-4105-b8ce-73ca5520d360" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="LoginFailure.82bcf951-91cd-409c-ad43-20f3682cec78.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="ac3dfd51-835b-4d10-8af3-c3875b486ff1" Version="1.1" Url="http://localhost:56568/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="POST" Guid="370b2b3e-948f-4c0e-899e-c4ee252008e0" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2F" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443461780" RecordedValue="1397443461780" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="267d66ac-194e-4833-9227-a0aafcb7dc18" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAArYhbN5RMwvNonckHi%2FFW28p8sHslV%2FuSq94ow5spmggAAAAAOgAAAAAIAACAAAABtkwtDRO8z5cBp817p2l8tvi%2FdN3kf2Z7hq6ZkTABQbDAAAADBrkpRI%2FPU7QL5G5wZnve06HzziBd5rBKfX3h5JZ1q6iviA%2B9vrMPKWgmEmBLdSnZAAAAA%2FFQCLDIeBEVU7ujNmUw43KKW0WTLqG72NeSO%2BK1T7HIXPuhwLxkQNpm2mfVGps%2BkKxuZ3MtQbbeFnq6p1F6%2F4A%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAArYhbN5RMwvNonckHi%2FFW28p8sHslV%2FuSq94ow5spmggAAAAAOgAAAAAIAACAAAABtkwtDRO8z5cBp817p2l8tvi%2FdN3kf2Z7hq6ZkTABQbDAAAADBrkpRI%2FPU7QL5G5wZnve06HzziBd5rBKfX3h5JZ1q6iviA%2B9vrMPKWgmEmBLdSnZAAAAA%2FFQCLDIeBEVU7ujNmUw43KKW0WTLqG72NeSO%2BK1T7HIXPuhwLxkQNpm2mfVGps%2BkKxuZ3MtQbbeFnq6p1F6%2F4A%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2F" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443462049" RecordedValue="1397443462049" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="5ab0105e-7c87-468d-b4a6-69b8dcbd596b" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/send" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAArYhbN5RMwvNonckHi%2FFW28p8sHslV%2FuSq94ow5spmggAAAAAOgAAAAAIAACAAAABtkwtDRO8z5cBp817p2l8tvi%2FdN3kf2Z7hq6ZkTABQbDAAAADBrkpRI%2FPU7QL5G5wZnve06HzziBd5rBKfX3h5JZ1q6iviA%2B9vrMPKWgmEmBLdSnZAAAAA%2FFQCLDIeBEVU7ujNmUw43KKW0WTLqG72NeSO%2BK1T7HIXPuhwLxkQNpm2mfVGps%2BkKxuZ3MtQbbeFnq6p1F6%2F4A%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAArYhbN5RMwvNonckHi%2FFW28p8sHslV%2FuSq94ow5spmggAAAAAOgAAAAAIAACAAAABtkwtDRO8z5cBp817p2l8tvi%2FdN3kf2Z7hq6ZkTABQbDAAAADBrkpRI%2FPU7QL5G5wZnve06HzziBd5rBKfX3h5JZ1q6iviA%2B9vrMPKWgmEmBLdSnZAAAAA%2FFQCLDIeBEVU7ujNmUw43KKW0WTLqG72NeSO%2BK1T7HIXPuhwLxkQNpm2mfVGps%2BkKxuZ3MtQbbeFnq6p1F6%2F4A%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2F" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="c3f7eb7e-ff30-4527-a782-4be761342a97" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/poll" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAArYhbN5RMwvNonckHi%2FFW28p8sHslV%2FuSq94ow5spmggAAAAAOgAAAAAIAACAAAABtkwtDRO8z5cBp817p2l8tvi%2FdN3kf2Z7hq6ZkTABQbDAAAADBrkpRI%2FPU7QL5G5wZnve06HzziBd5rBKfX3h5JZ1q6iviA%2B9vrMPKWgmEmBLdSnZAAAAA%2FFQCLDIeBEVU7ujNmUw43KKW0WTLqG72NeSO%2BK1T7HIXPuhwLxkQNpm2mfVGps%2BkKxuZ3MtQbbeFnq6p1F6%2F4A%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAArYhbN5RMwvNonckHi%2FFW28p8sHslV%2FuSq94ow5spmggAAAAAOgAAAAAIAACAAAABtkwtDRO8z5cBp817p2l8tvi%2FdN3kf2Z7hq6ZkTABQbDAAAADBrkpRI%2FPU7QL5G5wZnve06HzziBd5rBKfX3h5JZ1q6iviA%2B9vrMPKWgmEmBLdSnZAAAAA%2FFQCLDIeBEVU7ujNmUw43KKW0WTLqG72NeSO%2BK1T7HIXPuhwLxkQNpm2mfVGps%2BkKxuZ3MtQbbeFnq6p1F6%2F4A%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="messageId" Value="d-C83AF325-k%2C0%7C1%2C1%7C2%2C0" RecordedValue="d-C83AF325-k%2C0%7C1%2C1%7C2%2C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2F" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443462059" RecordedValue="1397443462059" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="63140152-95d1-43ba-a9b7-099132bf0289" Version="1.1" Url="http://localhost:56568/Logoff/Index" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:56568/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="2a9ca688-c8d2-4444-b93b-27cea2cc61ee" Version="1.1" Url="http://localhost:56568/Home/Index" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:56568/Logoff/Index" />
+      </Headers>
+    </Request>
+    <Request Method="POST" Guid="558d44e7-54ca-4523-8100-bcaed850b6c0" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/abort" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAArYhbN5RMwvNonckHi%2FFW28p8sHslV%2FuSq94ow5spmggAAAAAOgAAAAAIAACAAAABtkwtDRO8z5cBp817p2l8tvi%2FdN3kf2Z7hq6ZkTABQbDAAAADBrkpRI%2FPU7QL5G5wZnve06HzziBd5rBKfX3h5JZ1q6iviA%2B9vrMPKWgmEmBLdSnZAAAAA%2FFQCLDIeBEVU7ujNmUw43KKW0WTLqG72NeSO%2BK1T7HIXPuhwLxkQNpm2mfVGps%2BkKxuZ3MtQbbeFnq6p1F6%2F4A%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAArYhbN5RMwvNonckHi%2FFW28p8sHslV%2FuSq94ow5spmggAAAAAOgAAAAAIAACAAAABtkwtDRO8z5cBp817p2l8tvi%2FdN3kf2Z7hq6ZkTABQbDAAAADBrkpRI%2FPU7QL5G5wZnve06HzziBd5rBKfX3h5JZ1q6iviA%2B9vrMPKWgmEmBLdSnZAAAAA%2FFQCLDIeBEVU7ujNmUw43KKW0WTLqG72NeSO%2BK1T7HIXPuhwLxkQNpm2mfVGps%2BkKxuZ3MtQbbeFnq6p1F6%2F4A%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2F" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="9f807ec5-b22b-4910-b263-61654a5e9c31" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Home/Index" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443466031" RecordedValue="1397443466031" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="1ec6d488-54d9-4601-a56b-0f9f7e207171" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Home/Index" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAC%2B%2B0Rk6hGOfJn3AJdIVvhydAIyyTlCKQF4cD4EwJOJqQAAAAAOgAAAAAIAACAAAADwIETRH1VgQB%2BKXY69j9knat8ua%2BmGQMQ%2BrexYk1XPGzAAAAD%2F22z1Ecap45I76%2BXCraMJXuyQAiTFDoSYqf441KvD4GQ7jGpQyOFbKNvG1BDGPslAAAAAIBIdg7J4J78GQr6GjRfT%2F6aZpoIRoaIl%2FOQJgy%2BczHoqq7advNfQ10HK9jt0hgk6Vd8LY7%2BUgh6IGjY6Y4d9Hw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAC%2B%2B0Rk6hGOfJn3AJdIVvhydAIyyTlCKQF4cD4EwJOJqQAAAAAOgAAAAAIAACAAAADwIETRH1VgQB%2BKXY69j9knat8ua%2BmGQMQ%2BrexYk1XPGzAAAAD%2F22z1Ecap45I76%2BXCraMJXuyQAiTFDoSYqf441KvD4GQ7jGpQyOFbKNvG1BDGPslAAAAAIBIdg7J4J78GQr6GjRfT%2F6aZpoIRoaIl%2FOQJgy%2BczHoqq7advNfQ10HK9jt0hgk6Vd8LY7%2BUgh6IGjY6Y4d9Hw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443466314" RecordedValue="1397443466314" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="34018067-d002-46e1-a618-65c5714b973a" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/send" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Home/Index" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAC%2B%2B0Rk6hGOfJn3AJdIVvhydAIyyTlCKQF4cD4EwJOJqQAAAAAOgAAAAAIAACAAAADwIETRH1VgQB%2BKXY69j9knat8ua%2BmGQMQ%2BrexYk1XPGzAAAAD%2F22z1Ecap45I76%2BXCraMJXuyQAiTFDoSYqf441KvD4GQ7jGpQyOFbKNvG1BDGPslAAAAAIBIdg7J4J78GQr6GjRfT%2F6aZpoIRoaIl%2FOQJgy%2BczHoqq7advNfQ10HK9jt0hgk6Vd8LY7%2BUgh6IGjY6Y4d9Hw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAC%2B%2B0Rk6hGOfJn3AJdIVvhydAIyyTlCKQF4cD4EwJOJqQAAAAAOgAAAAAIAACAAAADwIETRH1VgQB%2BKXY69j9knat8ua%2BmGQMQ%2BrexYk1XPGzAAAAD%2F22z1Ecap45I76%2BXCraMJXuyQAiTFDoSYqf441KvD4GQ7jGpQyOFbKNvG1BDGPslAAAAAIBIdg7J4J78GQr6GjRfT%2F6aZpoIRoaIl%2FOQJgy%2BczHoqq7advNfQ10HK9jt0hgk6Vd8LY7%2BUgh6IGjY6Y4d9Hw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="a931b27e-2caa-4b20-8359-237a16492373" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/poll" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Home/Index" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAC%2B%2B0Rk6hGOfJn3AJdIVvhydAIyyTlCKQF4cD4EwJOJqQAAAAAOgAAAAAIAACAAAADwIETRH1VgQB%2BKXY69j9knat8ua%2BmGQMQ%2BrexYk1XPGzAAAAD%2F22z1Ecap45I76%2BXCraMJXuyQAiTFDoSYqf441KvD4GQ7jGpQyOFbKNvG1BDGPslAAAAAIBIdg7J4J78GQr6GjRfT%2F6aZpoIRoaIl%2FOQJgy%2BczHoqq7advNfQ10HK9jt0hgk6Vd8LY7%2BUgh6IGjY6Y4d9Hw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAC%2B%2B0Rk6hGOfJn3AJdIVvhydAIyyTlCKQF4cD4EwJOJqQAAAAAOgAAAAAIAACAAAADwIETRH1VgQB%2BKXY69j9knat8ua%2BmGQMQ%2BrexYk1XPGzAAAAD%2F22z1Ecap45I76%2BXCraMJXuyQAiTFDoSYqf441KvD4GQ7jGpQyOFbKNvG1BDGPslAAAAAIBIdg7J4J78GQr6GjRfT%2F6aZpoIRoaIl%2FOQJgy%2BczHoqq7advNfQ10HK9jt0hgk6Vd8LY7%2BUgh6IGjY6Y4d9Hw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="messageId" Value="d-C83AF325-k%2C0%7C3%2C1%7C4%2C0" RecordedValue="d-C83AF325-k%2C0%7C3%2C1%7C4%2C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443466323" RecordedValue="1397443466323" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="31d48eea-bec5-4419-a54a-7ba47826635c" Version="1.1" Url="http://localhost:56568/Login" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:56568/Home/Index" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="POST" Guid="86bbe1bc-d14a-41d0-bbce-ba94023c3cfa" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/abort" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Home/Index" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAC%2B%2B0Rk6hGOfJn3AJdIVvhydAIyyTlCKQF4cD4EwJOJqQAAAAAOgAAAAAIAACAAAADwIETRH1VgQB%2BKXY69j9knat8ua%2BmGQMQ%2BrexYk1XPGzAAAAD%2F22z1Ecap45I76%2BXCraMJXuyQAiTFDoSYqf441KvD4GQ7jGpQyOFbKNvG1BDGPslAAAAAIBIdg7J4J78GQr6GjRfT%2F6aZpoIRoaIl%2FOQJgy%2BczHoqq7advNfQ10HK9jt0hgk6Vd8LY7%2BUgh6IGjY6Y4d9Hw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAAC%2B%2B0Rk6hGOfJn3AJdIVvhydAIyyTlCKQF4cD4EwJOJqQAAAAAOgAAAAAIAACAAAADwIETRH1VgQB%2BKXY69j9knat8ua%2BmGQMQ%2BrexYk1XPGzAAAAD%2F22z1Ecap45I76%2BXCraMJXuyQAiTFDoSYqf441KvD4GQ7jGpQyOFbKNvG1BDGPslAAAAAIBIdg7J4J78GQr6GjRfT%2F6aZpoIRoaIl%2FOQJgy%2BczHoqq7advNfQ10HK9jt0hgk6Vd8LY7%2BUgh6IGjY6Y4d9Hw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FHome%2FIndex" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="26b2bbcd-ac88-40db-b3fd-e0ac98aae993" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443468872" RecordedValue="1397443468872" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="27e0c6ac-5720-4703-87e7-1f9c215fbc4c" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443469149" RecordedValue="1397443469149" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="e537e8d9-8500-45cd-9017-9fda14016818" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/send" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="94d7afa2-e257-4878-93cf-38f66aba9e04" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/poll" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="messageId" Value="d-C83AF325-k%2C0%7C5%2C1%7C6%2C0" RecordedValue="d-C83AF325-k%2C0%7C5%2C1%7C6%2C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443469158" RecordedValue="1397443469158" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="0a2d840e-b724-4392-a684-7f5f4fdc0c2c" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/poll" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="messageId" Value="d-C83AF325-k%2C0%7C5%2C2%7C6%2C0" RecordedValue="d-C83AF325-k%2C0%7C5%2C2%7C6%2C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443469179" RecordedValue="1397443469179" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="2b9b0ff8-189a-40fa-b46f-9a993794e072" Version="1.1" Url="http://localhost:56568/Login" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="POST" Guid="7e394515-06f8-4c69-8e55-cc3f8537711b" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/abort" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+            <Header Name="Referer" Value="http://localhost:56568/Login" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAABXvOjzeTMSYbdm%2FswDcxz3F71zu6s7ibx2bc9oP1h1RAAAAAAOgAAAAAIAACAAAAANyWdkwJwCYKJUIY%2BZnQpgOinVe2f1GT2O3exX1QuwgjAAAADF%2BEftiiAgJXh8q0e9EwhhgZ7CxP1J%2FEj73jyIKlR4qdM03CZoqTnghqA3JHpBFNtAAAAAaD8hUcYCvFAo3FLGMJQp8q7vpoe98WEyhVC%2Bz2J36MIc1oAfjJjcGD6IF%2Bo5mzUlC6CTUmxfgKnhkkkM%2BQIpcw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+          <FormPostHttpBody />
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="sZZicKQZ0luReowPsanX6jqBnEwjd2nE5Qen-rFY_z8L4aQX-2Hu5okJO0wxlYLgRCSHqptN-IOXTqMgA51ADPZ_VS60T0mwFtPbRmIl-WI1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Username" Value="sing1231" RecordedValue="sing1231" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Password" Value="dgdgsdh" RecordedValue="dgdgsdh" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="e56acf0a-97aa-429f-97df-5d1aca66fef0" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443479543" RecordedValue="1397443479543" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="b9337a6b-ee81-4cdd-9baf-548514e244ba" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAADqrrXL9L5DXEPe46L4IDnPgzCUsIaVJ2gpYlS8GtlzJgAAAAAOgAAAAAIAACAAAAB2bWVtee0DINZLjGcjxq2DAkfxdls4MSgXvM%2FwaoFPDzAAAAAGL4BCtit577jjv%2FgfwfvMqnvS%2FU%2Feksi85px7LmMBlyoxFE4fy6M47sac8P8K1aJAAAAAithLx5F7A9nPC%2FmeS6lRd00nf%2BI3avJKrXs8m12ADrw%2B2C6PYULnKQ6lVPcX%2Fd%2Fg64UAklwcdYFhNS3ubFPTCg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAADqrrXL9L5DXEPe46L4IDnPgzCUsIaVJ2gpYlS8GtlzJgAAAAAOgAAAAAIAACAAAAB2bWVtee0DINZLjGcjxq2DAkfxdls4MSgXvM%2FwaoFPDzAAAAAGL4BCtit577jjv%2FgfwfvMqnvS%2FU%2Feksi85px7LmMBlyoxFE4fy6M47sac8P8K1aJAAAAAithLx5F7A9nPC%2FmeS6lRd00nf%2BI3avJKrXs8m12ADrw%2B2C6PYULnKQ6lVPcX%2Fd%2Fg64UAklwcdYFhNS3ubFPTCg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443479832" RecordedValue="1397443479832" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="715ad66b-a588-4c90-ad91-236f3222bd08" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/send" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAADqrrXL9L5DXEPe46L4IDnPgzCUsIaVJ2gpYlS8GtlzJgAAAAAOgAAAAAIAACAAAAB2bWVtee0DINZLjGcjxq2DAkfxdls4MSgXvM%2FwaoFPDzAAAAAGL4BCtit577jjv%2FgfwfvMqnvS%2FU%2Feksi85px7LmMBlyoxFE4fy6M47sac8P8K1aJAAAAAithLx5F7A9nPC%2FmeS6lRd00nf%2BI3avJKrXs8m12ADrw%2B2C6PYULnKQ6lVPcX%2Fd%2Fg64UAklwcdYFhNS3ubFPTCg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAADqrrXL9L5DXEPe46L4IDnPgzCUsIaVJ2gpYlS8GtlzJgAAAAAOgAAAAAIAACAAAAB2bWVtee0DINZLjGcjxq2DAkfxdls4MSgXvM%2FwaoFPDzAAAAAGL4BCtit577jjv%2FgfwfvMqnvS%2FU%2Feksi85px7LmMBlyoxFE4fy6M47sac8P8K1aJAAAAAithLx5F7A9nPC%2FmeS6lRd00nf%2BI3avJKrXs8m12ADrw%2B2C6PYULnKQ6lVPcX%2Fd%2Fg64UAklwcdYFhNS3ubFPTCg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="POST" Guid="e032017e-cfa0-4255-9206-d545e74aa591" Version="1.1" Url="http://localhost:1585/f2674395a3d942ca9b92874f897aef4b/arterySignalR/poll" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost:56568/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="longPolling" RecordedValue="longPolling" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAADqrrXL9L5DXEPe46L4IDnPgzCUsIaVJ2gpYlS8GtlzJgAAAAAOgAAAAAIAACAAAAB2bWVtee0DINZLjGcjxq2DAkfxdls4MSgXvM%2FwaoFPDzAAAAAGL4BCtit577jjv%2FgfwfvMqnvS%2FU%2Feksi85px7LmMBlyoxFE4fy6M47sac8P8K1aJAAAAAithLx5F7A9nPC%2FmeS6lRd00nf%2BI3avJKrXs8m12ADrw%2B2C6PYULnKQ6lVPcX%2Fd%2Fg64UAklwcdYFhNS3ubFPTCg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAfASzhGONZ0uDctsl63vOtQAAAAACAAAAAAAQZgAAAAEAACAAAADqrrXL9L5DXEPe46L4IDnPgzCUsIaVJ2gpYlS8GtlzJgAAAAAOgAAAAAIAACAAAAB2bWVtee0DINZLjGcjxq2DAkfxdls4MSgXvM%2FwaoFPDzAAAAAGL4BCtit577jjv%2FgfwfvMqnvS%2FU%2Feksi85px7LmMBlyoxFE4fy6M47sac8P8K1aJAAAAAithLx5F7A9nPC%2FmeS6lRd00nf%2BI3avJKrXs8m12ADrw%2B2C6PYULnKQ6lVPcX%2Fd%2Fg64UAklwcdYFhNS3ubFPTCg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="messageId" Value="d-C83AF325-k%2C0%7C7%2C1%7C8%2C0" RecordedValue="d-C83AF325-k%2C0%7C7%2C1%7C8%2C0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%3A56568%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%3A56568%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="InternetExplorer" RecordedValue="InternetExplorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1397443479840" RecordedValue="1397443479840" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

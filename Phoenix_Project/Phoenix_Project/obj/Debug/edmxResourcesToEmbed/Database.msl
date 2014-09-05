@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Phoenix_DatabaseModelStoreContainer" CdmEntityContainer="Phoenix_DatabaseEntities">
+    <EntitySetMapping Name="Bookings">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.Booking">
+        <MappingFragment StoreEntitySet="Bookings">
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Postal" ColumnName="Postal" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PrefferedDateOFContact1" ColumnName="PrefferedDateOFContact1" />
+          <ScalarProperty Name="PrefferedDateOFContact2" ColumnName="PrefferedDateOFContact2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Galleries">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.Gallery">
+        <MappingFragment StoreEntitySet="Galleries">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileDesc" ColumnName="FileDesc" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="FileLocation" ColumnName="FileLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventories">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.Inventory">
+        <MappingFragment StoreEntitySet="Inventories">
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="InventoryItem" ColumnName="InventoryItem" />
+          <ScalarProperty Name="InventoryDesc" ColumnName="InventoryDesc" />
+          <ScalarProperty Name="InventoryQty" ColumnName="InventoryQty" />
+          <ScalarProperty Name="InventoryPrice" ColumnName="InventoryPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryItems">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.InventoryItem">
+        <MappingFragment StoreEntitySet="InventoryItems">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemDesc" ColumnName="ItemDesc" />
+          <ScalarProperty Name="ItemQty" ColumnName="ItemQty" />
+          <ScalarProperty Name="ItemPurchaseDate" ColumnName="ItemPurchaseDate" />
+          <ScalarProperty Name="ItemExpirydate" ColumnName="ItemExpirydate" />
+          <ScalarProperty Name="Inventory_InventoryId" ColumnName="Inventory_InventoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuItems">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.MenuItem">
+        <MappingFragment StoreEntitySet="MenuItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemDesc" ColumnName="ItemDesc" />
+          <ScalarProperty Name="ItemQty" ColumnName="ItemQty" />
+          <ScalarProperty Name="ItemPrice" ColumnName="ItemPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.Menu">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MenuProduct" ColumnName="MenuProduct" />
+          <ScalarProperty Name="MenuType" ColumnName="MenuType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItems">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.OrderItem">
+        <MappingFragment StoreEntitySet="OrderItems">
+          <ScalarProperty Name="OrderItemId" ColumnName="OrderItemId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="OrderDesc" ColumnName="OrderDesc" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="ProductQty" ColumnName="ProductQty" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="ProductExpiryDate" ColumnName="ProductExpiryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserPhoneNo" ColumnName="UserPhoneNo" />
+          <ScalarProperty Name="UserAddress1" ColumnName="UserAddress1" />
+          <ScalarProperty Name="UserAddress2" ColumnName="UserAddress2" />
+          <ScalarProperty Name="UserCity" ColumnName="UserCity" />
+          <ScalarProperty Name="UserProvince" ColumnName="UserProvince" />
+          <ScalarProperty Name="UserPostal" ColumnName="UserPostal" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vendors">
+      <EntityTypeMapping TypeName="Phoenix_DatabaseModel.Vendor">
+        <MappingFragment StoreEntitySet="Vendors">
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="VendorPhoneNo" ColumnName="VendorPhoneNo" />
+          <ScalarProperty Name="VendorEmail" ColumnName="VendorEmail" />
+          <ScalarProperty Name="VendorAddress1" ColumnName="VendorAddress1" />
+          <ScalarProperty Name="VendorAddress2" ColumnName="VendorAddress2" />
+          <ScalarProperty Name="VendorCity" ColumnName="VendorCity" />
+          <ScalarProperty Name="VendorProvince" ColumnName="VendorProvince" />
+          <ScalarProperty Name="VendorPostal" ColumnName="VendorPostal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MenuMenuItem" TypeName="Phoenix_DatabaseModel.MenuMenuItem" StoreEntitySet="MenuMenuItem">
+      <EndProperty Name="Menus">
+        <ScalarProperty Name="Id" ColumnName="Menus_Id" />
+      </EndProperty>
+      <EndProperty Name="MenuItems">
+        <ScalarProperty Name="Id" ColumnName="MenuItems_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MenuProduct" TypeName="Phoenix_DatabaseModel.MenuProduct" StoreEntitySet="MenuProduct">
+      <EndProperty Name="Menus">
+        <ScalarProperty Name="Id" ColumnName="Menus_Id" />
+      </EndProperty>
+      <EndProperty Name="Products">
+        <ScalarProperty Name="ProductId" ColumnName="Products_ProductId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OrderItemOrder" TypeName="Phoenix_DatabaseModel.OrderItemOrder" StoreEntitySet="OrderItemOrder">
+      <EndProperty Name="Orders">
+        <ScalarProperty Name="OrderNo" ColumnName="Orders_OrderNo" />
+      </EndProperty>
+      <EndProperty Name="OrderItems">
+        <ScalarProperty Name="OrderItemId" ColumnName="OrderItems_OrderItemId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProductInventory" TypeName="Phoenix_DatabaseModel.ProductInventory" StoreEntitySet="ProductInventory">
+      <EndProperty Name="Inventories">
+        <ScalarProperty Name="InventoryId" ColumnName="Inventories_InventoryId" />
+      </EndProperty>
+      <EndProperty Name="Products">
+        <ScalarProperty Name="ProductId" ColumnName="Products_ProductId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProductOrder" TypeName="Phoenix_DatabaseModel.ProductOrder" StoreEntitySet="ProductOrder">
+      <EndProperty Name="Orders">
+        <ScalarProperty Name="OrderNo" ColumnName="Orders_OrderNo" />
+      </EndProperty>
+      <EndProperty Name="Products">
+        <ScalarProperty Name="ProductId" ColumnName="Products_ProductId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProductOrder1" TypeName="Phoenix_DatabaseModel.ProductOrder1" StoreEntitySet="ProductOrder1">
+      <EndProperty Name="Orders">
+        <ScalarProperty Name="OrderNo" ColumnName="ProductOrder1_Product_OrderNo" />
+      </EndProperty>
+      <EndProperty Name="Products">
+        <ScalarProperty Name="ProductId" ColumnName="ProductOrder1_Order_ProductId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProductOrderItem" TypeName="Phoenix_DatabaseModel.ProductOrderItem" StoreEntitySet="ProductOrderItem">
+      <EndProperty Name="OrderItems">
+        <ScalarProperty Name="OrderItemId" ColumnName="OrderItems_OrderItemId" />
+      </EndProperty>
+      <EndProperty Name="Products">
+        <ScalarProperty Name="ProductId" ColumnName="Products_ProductId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserBooking" TypeName="Phoenix_DatabaseModel.UserBooking" StoreEntitySet="UserBooking">
+      <EndProperty Name="Bookings">
+        <ScalarProperty Name="BookingId" ColumnName="Bookings_BookingId" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="UserId" ColumnName="Users_UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserOrder" TypeName="Phoenix_DatabaseModel.UserOrder" StoreEntitySet="UserOrder">
+      <EndProperty Name="Orders">
+        <ScalarProperty Name="OrderNo" ColumnName="Orders_OrderNo" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="UserId" ColumnName="Users_UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VendorInventoryItem" TypeName="Phoenix_DatabaseModel.VendorInventoryItem" StoreEntitySet="VendorInventoryItem">
+      <EndProperty Name="InventoryItems">
+        <ScalarProperty Name="ItemId" ColumnName="InventoryItems_ItemId" />
+      </EndProperty>
+      <EndProperty Name="Vendors">
+        <ScalarProperty Name="VendorId" ColumnName="Vendors_VendorId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

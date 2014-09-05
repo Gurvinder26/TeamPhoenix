@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Phoenix_DatabaseConnectionString-Web.config Connection String" description="Phoenix_DatabaseConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=GURVINDER-PC\SQLEXPRESS;Initial Catalog=Phoenix_Database;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Gurvinder\\Documents\\Visual\ Studio\ 2013\\Projects\\Phoenix_Project\\Phoenix_Project\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Phoenix_DatabaseConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="Phoenix_DatabaseEntities-Web.config Connection String" description="Phoenix_DatabaseEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Database.csdl|res://*/Database.ssdl|res://*/Database.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)\v11.0;attachdbfilename=C:\Users\Gurvinder\Documents\Phoenix_Database1.mdf;integrated security=True;connect timeout=30;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Gurvinder\\Documents\\Visual\ Studio\ 2013\\Projects\\Phoenix_Project\\Phoenix_Project\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Phoenix_DatabaseEntities']/@connectionString" />
+  </parameter>
+  <parameter name="Phoenix_DatabaseEntities1-Web.config Connection String" description="Phoenix_DatabaseEntities1 Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Database.csdl|res://*/Database.ssdl|res://*/Database.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=GURVINDER-PC\SQLEXPRESS;initial catalog=Phoenix_Database;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Gurvinder\\Documents\\Visual\ Studio\ 2013\\Projects\\Phoenix_Project\\Phoenix_Project\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Phoenix_DatabaseEntities1']/@connectionString" />
+  </parameter>
+</parameters>
