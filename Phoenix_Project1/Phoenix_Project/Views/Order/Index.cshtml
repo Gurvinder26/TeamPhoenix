@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Phoenix_Project.MenuItem>
+@{
+    ViewBag.Title = "Order Page";
+}
+
+<div>
+    <style>
+        .one {
+            border-top: 1px solid white;
+        }
+
+        img {
+            width: 280px;
+            height: 200px;
+        }
+
+        /*    .line {
+            padding-left: 10px;
+            padding-top: 30px;
+        }
+       */
+        categories{
+            height:400px;
+            
+        }
+    </style>
+
+
+    <div class="one">
+        <div class="row">
+            <div class="col-md-8">
+                <div>
+                    @foreach (var item in Model)
+                    {
+                        <div class="line">
+                            <h4><b> @Html.DisplayFor(modelItem => item.ItemName)</b></h4><br />
+                            <img src="@Html.DisplayFor(modelItem => item.image)" style=" height:200px;width:260px;" /><br />
+                            <br />
+                            <button type="button">Add To Order</button>
+                            <br />
+                            <br />
+
+
+                            <p>@Html.DisplayFor(modelItem => item.ItemDesc)</p>
+                            <br />
+                            <p>
+                                Price: $ @Html.DisplayFor(modelItem => item.ItemPrice)
+                            </p>
+
+
+                        </div>
+                    }
+                </div>
+
+
+
+
+                <div>
+
+
+                </div>
+                </div>
+                <div id="categories" class="col-md-4 ">
+                    <p>Categories</p>
+                </div>
+            
+    <br />
+    <br />
+</div>
+</div>
+
+
+

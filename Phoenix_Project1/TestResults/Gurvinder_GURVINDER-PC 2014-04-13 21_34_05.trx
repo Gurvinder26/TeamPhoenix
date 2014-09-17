@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bd077dbf-cedd-4822-b917-ad69013420e7" name="Gurvinder@GURVINDER-PC 2014-04-13 21:34:05" runUser="Gurvinder-PC\Gurvinder" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="8cd9a2a3-3be9-4d45-baf7-0cb3500480e0">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Gurvinder_GURVINDER-PC 2014-04-13 21_34_05" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2014-04-13T21:34:05.0902567-04:00" queuing="2014-04-13T21:34:05.3252702-04:00" start="2014-04-13T21:34:05.3882738-04:00" finish="2014-04-13T21:34:13.2137214-04:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebTest name="WebTest1" storage="c:\users\gurvinder\documents\visual studio 2013\projects\phoenix_project\phoenix_project.tests\webtest1.webtest" id="e8680f35-1e8c-4c15-8a18-ceb61103708e" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iV2ViVGVzdDEiIElkPSJlODY4MGYzNS0xZThjLTRjMTUtOGExOC1jZWI2MTEwMzcwOGUiIE93bmVyPSIiIFByaW9yaXR5PSIyMTQ3NDgzNjQ3IiBFbmFibGVkPSJUcnVlIiBDc3NQcm9qZWN0U3RydWN0dXJlPSIiIENzc0l0ZXJhdGlvbj0iIiBUaW1lb3V0PSIwIiBXb3JrSXRlbUlkcz0iIiB4bWxucz0iaHR0cDovL21pY3Jvc29mdC5jb20vc2NoZW1hcy9WaXN1YWxTdHVkaW8vVGVhbVRlc3QvMjAxMCIgRGVzY3JpcHRpb249IiIgQ3JlZGVudGlhbFVzZXJOYW1lPSIiIENyZWRlbnRpYWxQYXNzd29yZD0iIiBQcmVBdXRoZW50aWNhdGU9IlRydWUiIFByb3h5PSJkZWZhdWx0IiBTdG9wT25FcnJvcj0iRmFsc2UiIFJlY29yZGVkUmVzdWx0RmlsZT0iIiBSZXN1bHRzTG9jYWxlPSIiIC8+">
+      <Execution id="2e4722a1-1987-4164-818a-dbc3a3feae7a" />
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="e8680f35-1e8c-4c15-8a18-ceb61103708e" executionId="2e4722a1-1987-4164-818a-dbc3a3feae7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebTestResult executionId="2e4722a1-1987-4164-818a-dbc3a3feae7a" testId="e8680f35-1e8c-4c15-8a18-ceb61103708e" testName="WebTest1" computerName="GURVINDER-PC" duration="00:00:00.0082151" startTime="2014-04-13T21:34:05.4882795-04:00" endTime="2014-04-13T21:34:13.1917201-04:00" testType="4e7599fa-5ecb-43e9-a887-cd63cf72d207" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e4722a1-1987-4164-818a-dbc3a3feae7a">
+      <ResultFiles>
+        <ResultFile path="WebTest1.webtestResult" />
+      </ResultFiles>
+      <TestSettings name="Default Test Settings" id="8cd9a2a3-3be9-4d45-baf7-0cb3500480e0">
+        <Execution>
+          <TestTypeSpecific>
+            <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+              <Browser name="Internet Explorer 9.0" MaxConnections="6">
+                <Headers>
+                  <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+                  <Header name="Accept" value="*/*" />
+                  <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+                  <Header name="Accept-Encoding" value="GZIP" />
+                </Headers>
+              </Browser>
+            </WebTestRunConfiguration>
+          </TestTypeSpecific>
+          <AgentRule name="Execution Agents">
+          </AgentRule>
+        </Execution>
+        <Deployment runDeploymentRoot="Gurvinder_GURVINDER-PC 2014-04-13 21_34_05" />
+        <Properties />
+      </TestSettings>
+      <WebTestResultFilePath>Gurvinder_GURVINDER-PC 2014-04-13 21_34_05\In\2e4722a1-1987-4164-818a-dbc3a3feae7a\WebTest1.webtestResult</WebTestResultFilePath>
+    </WebTestResult>
+  </Results>
+</TestRun>

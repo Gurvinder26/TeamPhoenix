@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Project" />
+  <setParameter name="Phoenix_DatabaseEntities-Web.config Connection String" value="metadata=res://*/Database.csdl|res://*/Database.ssdl|res://*/Database.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=GURVINDER-PC\SQLEXPRESS;initial catalog=Phoenix_Database;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+  <setParameter name="Phoenix_DatabaseConnectionString-Web.config Connection String" value="Data Source=GURVINDER-PC\SQLEXPRESS;Initial Catalog=Phoenix_Database;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" />
+</parameters>
