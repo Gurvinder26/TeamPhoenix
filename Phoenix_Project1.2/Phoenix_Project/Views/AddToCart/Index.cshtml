@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Phoenix_Project.MenuItem>
+
+@{
+    ViewBag.Title = "Add to Cart";
+}
+
+<h2>Add To Cart</h2>
+
+
+
+
+    @{List<MenuItem> items = new List<MenuItem>();
+
+
+
+    foreach (var item in Model)
+    {
+        items.Add(item);
+    }
+    
+
+    var categoryItems = from cItems in items
+                        where cItems.Category == ViewBag.CategoryName
+                        select cItems;
+
+    }
+
+    @foreach (var item in Model)
+    {
+
+        <div class="form-horizontal">
+            <h4><b> @Html.DisplayFor(modelItem => item.ItemName)</b></h4><br />
+            <img src="@Html.DisplayFor(modelItem => item.image)" style=" height:200px;width:260px;" /><br />
+
+
+            <br />
+            <br />
+            <p>@Html.DisplayFor(modelItem => item.ItemDesc)</p>
+            <br />
+            <p>
+                Price: $ @Html.DisplayFor(modelItem => item.ItemPrice)
+            </p>
+           
+            <table>
+                <tr>
+                    <th>
+                        <p>Quantity</p>
+                    </th>
+                    <th>
+                        @Html.TextBox("Quantity")
+                    </th>
+                </tr>
+            </table>
+            @Html.ActionLink("Submit", "AddConfirmed", new { id = item.Id })
+            }
+            
+           @* <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add To Cart" class="btn btn-default" />
+                </div>
+
+            </div>
+               *@
+        </div>
+    }   
+
+
+
+
+
+

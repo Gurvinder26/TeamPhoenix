@@ -1,0 +1,157 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "_AunysLayout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malhotra's Cuisine</title>
+    <link rel="shortcut icon" href="~/Content/images/MLogo.jpg" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+    li {
+        font-size: 14px;
+    }
+
+    ul {
+        color: black;
+    }
+
+    #navbar {
+        background-color: #9E2C2C;
+        position: relative;
+        top: -43px;
+        height: 70px;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .header {
+        position: relative;
+        top: -45px;
+        width: 100%;
+        height: 104px;
+        background-color: white;
+    }
+
+    #logo {
+        position: relative;
+        float: left;
+        height: 104px;
+        width: 260px;
+    }
+
+   
+   
+</style>
+   
+
+</head>
+<body>
+   @*<div >
+    //  <img id="backPic" src="~/Content/images/backPic.png" />*@ 
+        <div class="header">
+
+            <div>
+                <img id="logo" src="~/Content/images/logo.jpg" alt="Company Logo" />
+                <h1 style="font-family:fantasy; position:absolute;font-size:50px;color:black;bottom:0px;left:265px;">Malhotra's Cuisine</h1>
+
+            </div>
+
+        </div>
+
+
+        <div id="navbar" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav ">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Orders", "Order", "Home")</li>
+                        <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
+                        <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            @Html.Label(("Hello " + User.Identity.GetUserName() + "!"), new { style = "color:white;" })
+                        </li>
+                        
+                        <li><a href="/Logoff/Index">Log off</a></li>
+                        
+                        @*<li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>*@
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer class="container bottom">
+
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <p style="font-size:14px;"><b>Menu</b></p>
+                        @Html.ActionLink("Catering", "Order", "Home")<br />
+                        @Html.ActionLink("Take Out", "Order", "Home")<br />
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p style="font-size:14px;"><b>Social</b></p>
+                        <a href="http://facebook.com">Facebook</a><br />
+                        <a href="http://Twitter.com">Twitter</a><br />
+                        <a href="http://Youtube.com">Youtube</a><br />
+
+
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+
+                        <p style="font-size:14px;"><b>Privacy & Policy</b></p>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+
+                        <p style="font-size:14px;">
+                            <b>
+                                Malhotras Catering<br />
+                                155 Square One Drive<br />
+                                Mississauga ON<br />
+                                L5M 2G6<br />
+                                905-123-2345<br />
+                                parmalh@gmail.com
+                            </b>
+                        </p>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+   
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+
