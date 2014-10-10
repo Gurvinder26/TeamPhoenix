@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<style>
+    h1 {
+        color: red;
+    }
+
+   
+    img {
+        width: 260px;
+        height: 280px;
+    }
+
+    .mycontent-left {
+        border-right: 1px solid black;
+        padding-left: 10px;
+    }
+
+    .line {
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+</style>
+
+
+@*#C8DFE5*@
+@*style="background-color: ; "*@
+<div >
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="mycontent-left">
+
+                <p style="font-size:20px; font-family:'Curlz MT';"><b>Special offer:</b></p><br />
+
+                <img src="~/Content/images/SpecialOffer.jpg" style="padding-left:10px;" alt="image cannot be displayed" /><br /><br />
+                <p style="font-size: 20px; font-family: 'Bodoni MT Poster'; color: darkorange; padding-left:10px;"><b>Butter Chicken</b></p><br />
+
+                <p style="font-size: 20px; font-family: 'Bodoni MT Poster'; color: red; padding-left:10px;"><b><strike>Orignal price $7.49</strike></b></p><br />
+                <p style="font-size: 20px; font-family: 'Bodoni MT Poster'; color: green; padding-left:10px;"><b>Special price $5.49</b></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <div class="line">
+                    <h4><b>Catering</b></h4><br />
+                    <img src="~/Content/images/Catering.jpg" style="height:200px;width:260px;" /><br />
+
+                    <p>Catering is the business of providing food service at a remote site or a site such as a hotel, public house (pub), or other location.</p>
+                    <button type="button" onclick='window.location.href = "@Url.Action("Order","Home")";'>  Catering  </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="line">
+                <div>
+                    <h4><b>Takeout</b></h4><br />
+                    <img src="~/Content/images/Takeout.png" style="height:200px;width:260px;" /><br />
+
+                    <p>Takeout is available </p><br /><br />
+
+                    <button type="button" onclick='window.location.href = "@Url.Action("Order","Home")";'>  Take Out  </button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>

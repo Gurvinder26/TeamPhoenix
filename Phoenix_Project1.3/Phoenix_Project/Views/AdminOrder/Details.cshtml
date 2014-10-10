@@ -1,0 +1,89 @@
+﻿@model Phoenix_Project.OrderPlaced
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderPlaced</h4>
+	<hr />
+@{List<User> cust = new List<User>();}
+   @foreach(var user in  ViewBag.userInfo){
+       cust.Add(user);
+   }
+
+   
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.OrderNo)</dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrderNo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDoneTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDoneTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderTime)
+        </dd>
+
+        <dt>
+           Customer Name:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => cust.First().FirstName)
+        </dd>
+        <dt>
+            Customer Phone Number:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => cust.First().UserPhoneNo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemIds)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemIds)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Order List", "Index")
+</p>

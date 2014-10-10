@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Phoenix_Project.MenuItem>
+@{
+    ViewBag.Title = "Category Page";
+}
+
+<div>
+    <style>
+         .one {
+             border-top: 1px solid white;
+         }
+
+         img {
+             width: 280px;
+             height: 200px;
+         }
+
+         /*    .line {
+             padding-left: 10px;
+             padding-top: 30px;
+         }
+        */
+         categories {
+             height: 400px;
+         }
+    </style>
+    
+
+    <div class="one">
+        <div class="row">
+            <div class="col-md-8">
+                <div>
+                   @{ List<MenuItem> items = new List<MenuItem>();
+                      foreach (var item in Model)
+                      {
+                          items.Add(item);
+                         
+                      }
+
+                      var categoryItems = from cItems in items
+                       where cItems.Category == ViewBag.CategoryName
+                          select cItems;
+                    }
+                    @foreach (var item in categoryItems)
+                    {
+                        <div class="line">
+                            <h4><b> @Html.DisplayFor(modelItem => item.ItemName)</b></h4><br />
+                            <img src="@Html.DisplayFor(modelItem => item.image)" style=" height:200px;width:260px;" /><br />
+                            <br />
+                            @Html.ActionLink("Add To Cart", "Index", "AddToCart", new { id = item.Id },null)
+             
+                           
+                  
+                                <br />
+                                <br />
+
+                            
+                                <p>@Html.DisplayFor(modelItem => item.ItemDesc)</p>
+                                <br />
+                                <p>
+                                    Price: $ @Html.DisplayFor(modelItem => item.ItemPrice)
+                                </p>
+
+
+                        </div>
+                    }
+                </div>
+
+
+
+
+                <div>
+
+
+                </div>
+            </div>
+            <div id="categories" class="col-md-4 ">
+                <p>Categories</p>
+                <ul>
+                    @{
+                        List<string> categories = new List<string>();
+                    }
+                    @foreach (var item in Model)
+                    {
+
+                        if (categories.IndexOf(item.Category.ToUpper()) == -1)
+                        {
+                            categories.Add(item.Category.ToUpper());
+                            <li>@Html.ActionLink(item.Category.ToUpper(), "Category", new { category = item.Category })</li>
+                        }
+
+
+                    }
+                </ul>
+
+
+            </div>
+
+            <br />
+            <br />
+        </div>
+    </div>
+</div>
+
+

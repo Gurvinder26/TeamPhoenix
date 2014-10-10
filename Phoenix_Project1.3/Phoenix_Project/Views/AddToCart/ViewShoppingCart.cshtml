@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Phoenix_Project.ShoppingCart>
+
+@{
+    ViewBag.Title = "ViewShoppingCart";
+}
+
+
+
+@{List<MenuItem> itemsList = new List<MenuItem>();
+
+foreach (var item in ViewBag.model2)
+{
+    itemsList.Add(item);
+    
+}
+}
+@if (ViewBag.Count == 0)
+{
+    <div>
+        <h2>Your Shopping Cart is empty</h2>
+        </div>
+     @Html.ActionLink("Back to Menu Page", "Index","Order")
+}
+else { 
+<div>
+        <h2>ShoppingCart</h2>
+        <hr />
+
+     <table class="table">
+        <tr>
+            <th></th>
+            <th>Item</th>
+            <th>
+              Item Price
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                Total Price
+            </th>
+          <th></th>
+        </tr>
+
+
+        @foreach(var items in Model)
+        {
+            var iteminlist = from cItems in itemsList
+                             where cItems.Id == items.ItemId
+                             select cItems;
+         <tr>
+             <td><img src="@Html.DisplayFor(model => iteminlist.First().image)" style=" height:80px;width:80px;" /></td>
+           <td>@Html.DisplayFor(model => iteminlist.First().ItemName)</td>
+              <td>
+                   @Html.DisplayFor(model => iteminlist.First().ItemPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => items.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(model => items.Price)
+            </td>
+          <td>
+              @Html.ActionLink("Remove", "Remove", new { id = items.Id })
+          </td>
+        </tr>
+      }
+       </table>
+    </div>
+<p>
+   
+    @Html.ActionLink("Place Order", "OrderPlaced")
+</p>
+}

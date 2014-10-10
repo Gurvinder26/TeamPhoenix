@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="CapstoneProject" />
+  <setParameter name="Phoenix_DatabaseConnectionString-Web.config Connection String" value="Data Source=GURVINDER-PC\SQLEXPRESS;Initial Catalog=Phoenix_Database;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" />
+  <setParameter name="Phoenix_DatabaseEntities-Web.config Connection String" value="metadata=res://*/Database.csdl|res://*/Database.ssdl|res://*/Database.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)\v11.0;attachdbfilename=C:\Users\Gurvinder\Documents\Phoenix_Database1.mdf;integrated security=True;connect timeout=30;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+  <setParameter name="Phoenix_DatabaseEntities1-Web.config Connection String" value="metadata=res://*/Database.csdl|res://*/Database.ssdl|res://*/Database.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=GURVINDER-PC\SQLEXPRESS;initial catalog=Phoenix_Database;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+</parameters>

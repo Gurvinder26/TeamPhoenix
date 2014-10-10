@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="10765c40873a463992c798b8aef41a26" Name="Diagram1" ZoomLevel="96">
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.Booking" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.Gallery" Width="1.5" PointX="7.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.Inventory" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.InventoryItem" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.MenuItem" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.Menu" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.OrderItem" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.Order" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.Product" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.sysdiagram" Width="1.5" PointX="7.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.User" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.Vendor" Width="1.5" PointX="7.5" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.FK_InventoryInventoryItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.MenuMenuItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.MenuProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.OrderItemOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.ProductInventory" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.ProductOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.ProductOrder1" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.ProductOrderItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.UserBooking" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.UserOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.VendorInventoryItem" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.ShoppingCart" Width="1.5" PointX="10.5" PointY="7" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.OrderPlaced" Width="1.5" PointX="5.25" PointY="17.25" />
+        <EntityTypeShape EntityType="Phoenix_DatabaseModel.PlacedOrderItem" Width="1.5" PointX="7.5" PointY="13.375" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.FK_Table_ToTable_1" />
+        <AssociationConnector Association="Phoenix_DatabaseModel.FK_Table_ToTable" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,19 @@
+﻿@{
+    if (Request.IsAuthenticated)
+    {
+        if (User.Identity.Name == "sing1205")
+        {
+
+            Layout = "~/Views/Shared/_Layout1.cshtml";
+        }
+        else { 
+        Layout = "~/Views/Shared/_AunysLayout.cshtml";
+        }
+    }
+
+    else
+    {
+
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}

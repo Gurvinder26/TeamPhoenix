@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Phoenix_Project.OrderPlaced>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+@{List<MenuItem> itemsList = new List<MenuItem>();
+
+foreach (var item in ViewBag.MenuItems)
+{
+    itemsList.Add(item);
+
+}
+}
+
+
+<div>
+    <h2>Orders Placed</h2>
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.OrderNo)</th>
+            <th>@Html.DisplayNameFor(model => model.OrderDate)</th>
+            <th>Order Items </th>  
+            <th>Quantity</th>  
+            <th>Order Time</th>
+            <th>Order Price</th>
+            <th>Order State</th>
+            <th>Details</th>
+            <th>Change Order Status</th>
+            
+        </tr>
+
+
+
+        @foreach(var items in Model)
+        {
+            List<string> itemnames = new List<string>();
+            var itmids = items.ItemIds.Split(',');
+            List<string> quantity = new List<string>();
+
+            for (int v = 1; v < itmids.Count() - 1; v += 2)
+            {
+
+
+                quantity.Add(itmids[v]);
+            }
+
+           for (int c = 0; c < itmids.Count() - 1; c += 2)
+           {
+
+
+               var itemname = from cItems in itemsList
+                              where cItems.Id == Convert.ToInt32(itmids[c])
+                              select cItems.ItemName;
+               itemnames.Add(itemname.First().ToString());
+           }
+           
+            <tr>
+                
+                <td>
+                    @Html.DisplayFor(model => items.OrderNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => items.OrderDate)
+                </td>
+                <td>
+                   @for (int l = 0; l < itemnames.Count();l++)
+                   { 
+                  <p>@itemnames[l]</p>
+                     
+                   }
+                </td>
+                <td>
+                    @for (int k = 0; k < quantity.Count(); k++)
+                    {
+                        <p>@quantity[k]</p>
+                        
+                    }
+                </td>
+
+                <td>
+                   @Html.DisplayFor(model => items.OrderTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => items.OrderPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => items.OrderStatus)
+                </td>
+                <td>@Html.ActionLink("Details", "Details", new { id = items.OrderNo })</td>
+                <td>@Html.ActionLink("Mark Order as Done", "OrderDone", new { id = items.OrderNo })</td>
+            </tr>
+
+
+        }
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Completed Orders", "CompletedOrders") 
+   
+</p>

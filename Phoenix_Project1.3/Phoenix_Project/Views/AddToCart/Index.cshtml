@@ -1,0 +1,69 @@
+﻿@model Phoenix_Project.ShoppingCart
+
+@{
+    ViewBag.Title = "Add to Cart";
+}
+
+
+    @{List<MenuItem> items = new List<MenuItem>();
+
+
+
+    foreach (var item in ViewBag.model2)
+    {
+        items.Add(item);
+    }
+
+
+    var categoryItems = from cItems in items
+                        where cItems.Category == ViewBag.CategoryName
+                        select cItems;
+
+    }
+
+<h2>Add To Cart</h2>
+@using (Html.BeginForm(new { Id = ViewBag.id}))
+{
+
+
+    <div class="form-horizontal">
+    @for (int i = 0; i < items.Count;i++)
+    {
+
+            <h4><b> @Html.DisplayFor(modelItem => items[i].ItemName)</b></h4><br />
+            <img src="@Html.DisplayFor(modelItem => items[i].image)" style=" height:200px;width:260px;" /><br />
+            <br />
+            <br />
+            <p>@Html.DisplayFor(modelItem => items[i].ItemDesc)</p>
+            <br />
+            <p>
+                Price: $ @Html.DisplayFor(modelItem => items[i].ItemPrice)
+            </p>
+       
+             <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Quantity)
+                @Html.ValidationMessageFor(model => model.Quantity)
+            </div>
+        </div>
+          
+          @* @Html.ActionLink("Submit", "Index", new { id = item.Id })*@ 
+    }
+            
+           <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add To Cart" class="btn btn-default" />
+                </div>
+               
+            </div>
+              
+        </div>
+}
+    
+
+
+
+
+
+

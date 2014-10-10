@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Phoenix_DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bookings">
+    <Key>
+      <PropertyRef Name="BookingId" />
+    </Key>
+    <Property Name="BookingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PhoneNo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address2" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Province" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Postal" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EventType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="PrefferedDateOFContact1" Type="datetime" Nullable="false" />
+    <Property Name="PrefferedDateOFContact2" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Galleries">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FileDesc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FileType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FileLocation" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Inventories">
+    <Key>
+      <PropertyRef Name="InventoryId" />
+    </Key>
+    <Property Name="InventoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InventoryItem" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="InventoryDesc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="InventoryQty" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="InventoryPrice" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InventoryItems">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ItemDesc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ItemQty" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ItemPurchaseDate" Type="datetime" Nullable="false" />
+    <Property Name="ItemExpirydate" Type="datetime" Nullable="false" />
+    <Property Name="Inventory_InventoryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MenuItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemName" Type="varchar(max)" Nullable="false" />
+    <Property Name="ItemDesc" Type="varchar(max)" Nullable="false" />
+    <Property Name="ItemPrice" Type="float" Nullable="false" />
+    <Property Name="image" Type="varchar(max)" Nullable="false" />
+    <Property Name="Category" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MenuMenuItem">
+    <Key>
+      <PropertyRef Name="Menus_Id" />
+      <PropertyRef Name="MenuItems_Id" />
+    </Key>
+    <Property Name="Menus_Id" Type="int" Nullable="false" />
+    <Property Name="MenuItems_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MenuProduct">
+    <Key>
+      <PropertyRef Name="Menus_Id" />
+      <PropertyRef Name="Products_ProductId" />
+    </Key>
+    <Property Name="Menus_Id" Type="int" Nullable="false" />
+    <Property Name="Products_ProductId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MenuProduct" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MenuType" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderItemOrder">
+    <Key>
+      <PropertyRef Name="Orders_OrderNo" />
+      <PropertyRef Name="OrderItems_OrderItemId" />
+    </Key>
+    <Property Name="Orders_OrderNo" Type="int" Nullable="false" />
+    <Property Name="OrderItems_OrderItemId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderItems">
+    <Key>
+      <PropertyRef Name="OrderItemId" />
+    </Key>
+    <Property Name="OrderItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrderDesc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OrderQty" Type="int" Nullable="false" />
+    <Property Name="TotalPrice" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderPlaced">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderDate" Type="date" Nullable="false" />
+    <Property Name="OrderPrice" Type="float" Nullable="false" />
+    <Property Name="OrderStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderDoneTime" Type="datetime" />
+    <Property Name="OrderTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="ItemIds" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductDesc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductQty" Type="float" Nullable="false" />
+    <Property Name="TotalPrice" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PlacedOrderItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="OrderNo" Type="int" Nullable="false" />
+    <Property Name="OrderItemid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductInventory">
+    <Key>
+      <PropertyRef Name="Inventories_InventoryId" />
+      <PropertyRef Name="Products_ProductId" />
+    </Key>
+    <Property Name="Inventories_InventoryId" Type="int" Nullable="false" />
+    <Property Name="Products_ProductId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductOrder">
+    <Key>
+      <PropertyRef Name="Orders_OrderNo" />
+      <PropertyRef Name="Products_ProductId" />
+    </Key>
+    <Property Name="Orders_OrderNo" Type="int" Nullable="false" />
+    <Property Name="Products_ProductId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductOrder1">
+    <Key>
+      <PropertyRef Name="Orders1_OrderNo" />
+      <PropertyRef Name="Products1_ProductId" />
+    </Key>
+    <Property Name="Orders1_OrderNo" Type="int" Nullable="false" />
+    <Property Name="Products1_ProductId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductOrderItem">
+    <Key>
+      <PropertyRef Name="OrderItems_OrderItemId" />
+      <PropertyRef Name="Products_ProductId" />
+    </Key>
+    <Property Name="OrderItems_OrderItemId" Type="int" Nullable="false" />
+    <Property Name="Products_ProductId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductDesc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductExpiryDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ShoppingCart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Price" Type="float" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UserBooking">
+    <Key>
+      <PropertyRef Name="Bookings_BookingId" />
+      <PropertyRef Name="Users_UserId" />
+    </Key>
+    <Property Name="Bookings_BookingId" Type="int" Nullable="false" />
+    <Property Name="Users_UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserOrder">
+    <Key>
+      <PropertyRef Name="Orders_OrderNo" />
+      <PropertyRef Name="Users_UserId" />
+    </Key>
+    <Property Name="Orders_OrderNo" Type="int" Nullable="false" />
+    <Property Name="Users_UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserEmail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserPhoneNo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserAddress1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserAddress2" Type="nvarchar(max)" />
+    <Property Name="UserCity" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserProvince" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserPostal" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VendorInventoryItem">
+    <Key>
+      <PropertyRef Name="InventoryItems_ItemId" />
+      <PropertyRef Name="Vendors_VendorId" />
+    </Key>
+    <Property Name="InventoryItems_ItemId" Type="int" Nullable="false" />
+    <Property Name="Vendors_VendorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vendors">
+    <Key>
+      <PropertyRef Name="VendorId" />
+    </Key>
+    <Property Name="VendorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendorName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VendorPhoneNo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VendorEmail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VendorAddress1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VendorAddress2" Type="nvarchar(max)" />
+    <Property Name="VendorCity" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VendorProvince" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VendorPostal" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_InventoryInventoryItem">
+    <End Role="Inventories" Type="Self.Inventories" Multiplicity="1" />
+    <End Role="InventoryItems" Type="Self.InventoryItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventories">
+        <PropertyRef Name="InventoryId" />
+      </Principal>
+      <Dependent Role="InventoryItems">
+        <PropertyRef Name="Inventory_InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuMenuItem_MenuItems">
+    <End Role="MenuItems" Type="Self.MenuItems" Multiplicity="1" />
+    <End Role="MenuMenuItem" Type="Self.MenuMenuItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuItems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuMenuItem">
+        <PropertyRef Name="MenuItems_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuMenuItem_Menus">
+    <End Role="Menus" Type="Self.Menus" Multiplicity="1" />
+    <End Role="MenuMenuItem" Type="Self.MenuMenuItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuMenuItem">
+        <PropertyRef Name="Menus_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuProduct_Menus">
+    <End Role="Menus" Type="Self.Menus" Multiplicity="1" />
+    <End Role="MenuProduct" Type="Self.MenuProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuProduct">
+        <PropertyRef Name="Menus_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuProduct_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="MenuProduct" Type="Self.MenuProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="MenuProduct">
+        <PropertyRef Name="Products_ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderItemOrder_OrderItems">
+    <End Role="OrderItems" Type="Self.OrderItems" Multiplicity="1" />
+    <End Role="OrderItemOrder" Type="Self.OrderItemOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderItems">
+        <PropertyRef Name="OrderItemId" />
+      </Principal>
+      <Dependent Role="OrderItemOrder">
+        <PropertyRef Name="OrderItems_OrderItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderItemOrder_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="OrderItemOrder" Type="Self.OrderItemOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderNo" />
+      </Principal>
+      <Dependent Role="OrderItemOrder">
+        <PropertyRef Name="Orders_OrderNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductInventory_Inventories">
+    <End Role="Inventories" Type="Self.Inventories" Multiplicity="1" />
+    <End Role="ProductInventory" Type="Self.ProductInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventories">
+        <PropertyRef Name="InventoryId" />
+      </Principal>
+      <Dependent Role="ProductInventory">
+        <PropertyRef Name="Inventories_InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductInventory_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="ProductInventory" Type="Self.ProductInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductInventory">
+        <PropertyRef Name="Products_ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrder_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="ProductOrder" Type="Self.ProductOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderNo" />
+      </Principal>
+      <Dependent Role="ProductOrder">
+        <PropertyRef Name="Orders_OrderNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrder_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="ProductOrder" Type="Self.ProductOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductOrder">
+        <PropertyRef Name="Products_ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrder1_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="ProductOrder1" Type="Self.ProductOrder1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderNo" />
+      </Principal>
+      <Dependent Role="ProductOrder1">
+        <PropertyRef Name="Orders1_OrderNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrder1_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="ProductOrder1" Type="Self.ProductOrder1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductOrder1">
+        <PropertyRef Name="Products1_ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrderItem_OrderItems">
+    <End Role="OrderItems" Type="Self.OrderItems" Multiplicity="1" />
+    <End Role="ProductOrderItem" Type="Self.ProductOrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderItems">
+        <PropertyRef Name="OrderItemId" />
+      </Principal>
+      <Dependent Role="ProductOrderItem">
+        <PropertyRef Name="OrderItems_OrderItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrderItem_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="ProductOrderItem" Type="Self.ProductOrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductOrderItem">
+        <PropertyRef Name="Products_ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ToTable">
+    <End Role="OrderPlaced" Type="Self.OrderPlaced" Multiplicity="1" />
+    <End Role="PlacedOrderItems" Type="Self.PlacedOrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderPlaced">
+        <PropertyRef Name="OrderNo" />
+      </Principal>
+      <Dependent Role="PlacedOrderItems">
+        <PropertyRef Name="OrderNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ToTable_1">
+    <End Role="MenuItems" Type="Self.MenuItems" Multiplicity="1" />
+    <End Role="PlacedOrderItems" Type="Self.PlacedOrderItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuItems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlacedOrderItems">
+        <PropertyRef Name="OrderItemid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserBooking_Bookings">
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="1" />
+    <End Role="UserBooking" Type="Self.UserBooking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bookings">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="UserBooking">
+        <PropertyRef Name="Bookings_BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserBooking_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserBooking" Type="Self.UserBooking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserBooking">
+        <PropertyRef Name="Users_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserOrder_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="UserOrder" Type="Self.UserOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderNo" />
+      </Principal>
+      <Dependent Role="UserOrder">
+        <PropertyRef Name="Orders_OrderNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserOrder_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserOrder" Type="Self.UserOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserOrder">
+        <PropertyRef Name="Users_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendorInventoryItem_InventoryItems">
+    <End Role="InventoryItems" Type="Self.InventoryItems" Multiplicity="1" />
+    <End Role="VendorInventoryItem" Type="Self.VendorInventoryItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItems">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="VendorInventoryItem">
+        <PropertyRef Name="InventoryItems_ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendorInventoryItem_Vendors">
+    <End Role="Vendors" Type="Self.Vendors" Multiplicity="1" />
+    <End Role="VendorInventoryItem" Type="Self.VendorInventoryItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendors">
+        <PropertyRef Name="VendorId" />
+      </Principal>
+      <Dependent Role="VendorInventoryItem">
+        <PropertyRef Name="Vendors_VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Phoenix_DatabaseModelStoreContainer">
+    <EntitySet Name="Bookings" EntityType="Self.Bookings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Galleries" EntityType="Self.Galleries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Inventories" EntityType="Self.Inventories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryItems" EntityType="Self.InventoryItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MenuItems" EntityType="Self.MenuItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MenuMenuItem" EntityType="Self.MenuMenuItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MenuProduct" EntityType="Self.MenuProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menus" EntityType="Self.Menus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderItemOrder" EntityType="Self.OrderItemOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderItems" EntityType="Self.OrderItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderPlaced" EntityType="Self.OrderPlaced" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlacedOrderItems" EntityType="Self.PlacedOrderItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductInventory" EntityType="Self.ProductInventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductOrder" EntityType="Self.ProductOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductOrder1" EntityType="Self.ProductOrder1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductOrderItem" EntityType="Self.ProductOrderItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShoppingCart" EntityType="Self.ShoppingCart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserBooking" EntityType="Self.UserBooking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserOrder" EntityType="Self.UserOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VendorInventoryItem" EntityType="Self.VendorInventoryItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vendors" EntityType="Self.Vendors" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_InventoryInventoryItem" Association="Self.FK_InventoryInventoryItem">
+      <End Role="Inventories" EntitySet="Inventories" />
+      <End Role="InventoryItems" EntitySet="InventoryItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuMenuItem_MenuItems" Association="Self.FK_MenuMenuItem_MenuItems">
+      <End Role="MenuItems" EntitySet="MenuItems" />
+      <End Role="MenuMenuItem" EntitySet="MenuMenuItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuMenuItem_Menus" Association="Self.FK_MenuMenuItem_Menus">
+      <End Role="Menus" EntitySet="Menus" />
+      <End Role="MenuMenuItem" EntitySet="MenuMenuItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuProduct_Menus" Association="Self.FK_MenuProduct_Menus">
+      <End Role="Menus" EntitySet="Menus" />
+      <End Role="MenuProduct" EntitySet="MenuProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuProduct_Products" Association="Self.FK_MenuProduct_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="MenuProduct" EntitySet="MenuProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderItemOrder_OrderItems" Association="Self.FK_OrderItemOrder_OrderItems">
+      <End Role="OrderItems" EntitySet="OrderItems" />
+      <End Role="OrderItemOrder" EntitySet="OrderItemOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderItemOrder_Orders" Association="Self.FK_OrderItemOrder_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderItemOrder" EntitySet="OrderItemOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductInventory_Inventories" Association="Self.FK_ProductInventory_Inventories">
+      <End Role="Inventories" EntitySet="Inventories" />
+      <End Role="ProductInventory" EntitySet="ProductInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductInventory_Products" Association="Self.FK_ProductInventory_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductInventory" EntitySet="ProductInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrder_Orders" Association="Self.FK_ProductOrder_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="ProductOrder" EntitySet="ProductOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrder_Products" Association="Self.FK_ProductOrder_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductOrder" EntitySet="ProductOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrder1_Orders" Association="Self.FK_ProductOrder1_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="ProductOrder1" EntitySet="ProductOrder1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrder1_Products" Association="Self.FK_ProductOrder1_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductOrder1" EntitySet="ProductOrder1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrderItem_OrderItems" Association="Self.FK_ProductOrderItem_OrderItems">
+      <End Role="OrderItems" EntitySet="OrderItems" />
+      <End Role="ProductOrderItem" EntitySet="ProductOrderItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrderItem_Products" Association="Self.FK_ProductOrderItem_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductOrderItem" EntitySet="ProductOrderItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ToTable" Association="Self.FK_Table_ToTable">
+      <End Role="OrderPlaced" EntitySet="OrderPlaced" />
+      <End Role="PlacedOrderItems" EntitySet="PlacedOrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ToTable_1" Association="Self.FK_Table_ToTable_1">
+      <End Role="MenuItems" EntitySet="MenuItems" />
+      <End Role="PlacedOrderItems" EntitySet="PlacedOrderItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserBooking_Bookings" Association="Self.FK_UserBooking_Bookings">
+      <End Role="Bookings" EntitySet="Bookings" />
+      <End Role="UserBooking" EntitySet="UserBooking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserBooking_Users" Association="Self.FK_UserBooking_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserBooking" EntitySet="UserBooking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserOrder_Orders" Association="Self.FK_UserOrder_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="UserOrder" EntitySet="UserOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserOrder_Users" Association="Self.FK_UserOrder_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserOrder" EntitySet="UserOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendorInventoryItem_InventoryItems" Association="Self.FK_VendorInventoryItem_InventoryItems">
+      <End Role="InventoryItems" EntitySet="InventoryItems" />
+      <End Role="VendorInventoryItem" EntitySet="VendorInventoryItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendorInventoryItem_Vendors" Association="Self.FK_VendorInventoryItem_Vendors">
+      <End Role="Vendors" EntitySet="Vendors" />
+      <End Role="VendorInventoryItem" EntitySet="VendorInventoryItem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
